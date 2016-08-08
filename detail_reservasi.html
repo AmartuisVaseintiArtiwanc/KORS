@@ -19,18 +19,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <style>
 	.service{
-		width:32%;
+		width:22%;
 		float:left;
 		border-right: 1px solid white;
 		color:white;
 		margin: 0% 1%;
+		height:5%;
 	}
 
 	.contact-us{
-		width:24%;
+		width:20%;
+		float:left;
+		border-right: 1px solid white;
+		color:white;
+		margin: 0% 1%;
+		height: 5%;
+	}
+
+	.login-register{
+		width:20%;
 		float:left;
 		color:white;
 		margin: 0% 1%;
+	}
+
+	.login-register h3 a, .login-register h3 a:visited{
+		color:white !IMPORTANT;
+	}
+
+	.logo h1 a{
+		font-size: 42px;
 	}
 
 	.banner {
@@ -51,16 +69,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		margin-top: 3%;
 	}
 
-	.guest-information input[type="text"] {
-		width: 33%;
-		margin: 0px;
+	.new-guest-information label{
+		width: 20%;
+		color:black;
+	}
+	.new-guest-information input[type="text"] {
+		width: 79%;
+		margin: 1% 0px;
 		color: #D6D4D4;
 		background: none;
 		padding: 15px 10px;
 		outline: none;
 		border: 1px solid #BEBEBE;
 	}
-	.guest-information textarea {
+	.new-guest-information textarea {
 		width: 100%;
 		color: #D6D4D4;
 		resize: none;
@@ -78,8 +100,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	.none{
 		display: none;
 	}
+
+	.visa-method label, .master-method label, .transfer-method label {
+		width:20%;
+		color:black;
+	}
+
 	.visa-method input[type="text"], .master-method input[type="text"]{
-		width: 99%;
+		width: 79%;
 		margin: 0px;
 		color: #D6D4D4;
 		background: none;
@@ -89,7 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	}
 
 	.transfer-method input[type="text"]{
-		width: 99%;
+		width: 79%;
 		margin: 1% 0px;
 		color: #D6D4D4;
 		background: none;
@@ -144,52 +172,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h5> Sabtu, Minggu &amp; Hari Libur 24 Jam</h5>
 				</div>
 				<div class="contact-us">
+					<h6>&nbsp;</h6>
 					<h3>(021) 55153082</h3>
 					<h3> cs@kors.com</h3>
 				</div>
-					<nav class="navbar navbar-default" role="navigation">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<!--/.navbar-header-->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li><a href="index.html">Home</a></li>
-								<li class="active"><a href="rooms.html">Rooms</a></li>
-								<li><a href="offers.html">Offers</a></li>
-								<li><a href="shortcodes.html">Short Codes</a></li>
-								<li><a href="signin.html">Sign In</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-						<!--/.navbar-collapse-->
-					</nav>
-				<div class="search-box">
-					<div id="sb-search" class="sb-search">
-						<form>
-							<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-							<input class="sb-search-submit" type="submit" value="">
-							<span class="sb-icon-search"> </span>
-							</form>
-					</div>
+				<div class="login-register">
+					<h4>&nbsp;</h4>
+					<h3><a href="#">Login / Register</a></h3>
 				</div>
 					<div class="clearfix"> </div>
-
-				<!-- search-scripts -->
+			</div>
+		</div>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!--/.navbar-header-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Beranda</a></li>
+					<li><a href="rooms.html">Kamar</a></li>
+					<li><a href="offers.html">Promo</a></li>
+					<li><a href="offers.html">Cara Pemesanan</a></li>
+					<li><a href="offers.html">Kontak</a></li>
+				</ul>
+			</div>
+			<!--/.navbar-collapse-->
+			<div class="search-box">
+			<div id="sb-search" class="sb-search">
+				<form>
+					<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+					<input class="sb-search-submit" type="submit" value="">
+					<span class="sb-icon-search"> </span>
+					</form>
+			</div>
+			<!-- search-scripts -->
 					<script src="js/classie.js"></script>
 					<script src="js/uisearch.js"></script>
 					<script>
 						new UISearch( document.getElementById( 'sb-search' ) );
 					</script>
 				<!-- //search-scripts -->
-
-			</div>
 		</div>
+		</nav>
+		<div class="clearfix"> </div>
 	</div>		
 		<!-- banner -->
 <!-- single -->
@@ -255,14 +286,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="single-top">
 				<div class="col-md-12 single-right">
-					<h2>Informasi Guest</h2>
-					<div class="guest-information">
-						<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-						<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
-						<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
-						
+					<h2>Informasi Tamu</h2>
+					<div class="login-page">
+						<div class="container">
+							<div class="account_grid">
+								<div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
+									<h3>CUSTOMER BARU</h3>
+									<p>Dengan terdaftar sebagai tamu di tempat kami, Anda  akan lebih cepat dan mudah dalam melakukan proses reservasi</p>
+									<a class="acount-btn" href="register.html">Daftar Baru</a>
+							   </div>
+							   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
+									<h3>CUSTOMER TERDAFTAR</h3>
+									<p>Sudah terdaftar ? Log in disini</p>
+									<form>
+										<div>
+											<span>Alamat Email <label>*</label></span>
+											<input type="text"> 
+										</div>
+										<div>
+											<span>Password<label>*</label></span>
+											<input type="password"> 
+										</div>
+										<a class="forgot" href="#">Lupa Password?</a>
+										<input type="submit" value="Login">
+									</form>
+							   </div>	
+								<div class="clearfix"> </div>
+							</div>
+						</div>
 					</div>
+					<!--
+					<div class="new-guest-information">
+						<label for="Name"> Nama</label>
+						<input type="text" value="Nama" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+						<label for="Email"> Email</label>
+						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+						<label for="Phone"> No. Telepon</label>
+						<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
+					</div>-->
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -271,15 +332,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h2>Detail Informasi Pembayaran</h2>
 					<div>
 						<div class="visa-method none">
-							<input type="text" value="Visa Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'visa-number';}" />
+							<label for="visa-number"> No. Visa</label>
+							<input type="text" value="Nomor Visa" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'visa-number';}" />
 						</div>
 						<div class="master-method none">
-							<input type="text" value="Master Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'master-number';}" />
+							<label for="master-number"> No. Master</label>
+							<input type="text" value="Nomor Master " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'master-number';}" />
 						</div>
 						<div class="transfer-method none">
+							<label for="bank-name"> Nama Bank</label>
 							<input type="text" value="Nama Bank" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'bank-name';}" />
-							<input type="text" value="Nama Rekening" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'bank-name';}" />
-							<input type="text" value="Nomor Rekening" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'bank-name';}" />
+							<label for="account-name"> Nama Rekening</label>
+							<input type="text" value="Nama Rekening" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'account-name';}" />
+							<label for="account-number"> No. Rekening</label>
+							<input type="text" value="Nomor Rekening" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'account-number';}" />
 						</div>
 						<div class="terms-condition">
 							<p>Segala bentuk transaksi dilindungi oleh Undang Undang Indonesia dan secara sah dapat dipidanakan jika terjadi pelanggaran terhadap transaksi tersebut.</p>
@@ -302,15 +368,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="col-md-2 deco">
 				<h4>Navigation</h4>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="shortcodes.html">Short Codes </a></li>
-				<li><a href="sigin.html">Sign in</a></li> 
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="index.html">Beranda</a></li>
+				<li><a href="shortcodes.html">Kamar</a></li>
+				<li><a href="sigin.html">Promo</a></li> 
 			</div>
 			<div class="col-md-2 deco">
 				<h4>Links</h4> 
 				<li><a href="#">FAQ</a></li>
-				<li><a href="#">How to reserve</a></li>
+				<li><a href="#">Cara Pemesanan</a></li>
 				<li><a href="#">Terms &amp; Condition</a></li>
 			</div>
 			<div class="col-md-2 deco">
@@ -372,5 +437,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$(".transfer-method").removeClass("none").css("display","block");
 			return false;
 		});
+
+		
 	});
 </script>
