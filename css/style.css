@@ -678,14 +678,14 @@ i.g-1:hover{
 .login-right input[type="text"] {
 	border: 1px solid #EEE;
 	outline-color:#6cbc35;
-	width: 96%;
+	width: 92%;
 	font-size:1em;
 	padding: 0.5em;
 }
 .login-right input[type="password"] {
 	border: 1px solid #EEE;
 	outline-color:#6cbc35;
-	width: 96%;
+	width: 92%;
 	font-size:1em;
 	padding: 0.5em;
 }
